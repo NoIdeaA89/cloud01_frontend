@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Status</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div class="logo">Status</div>
+            <h1>Estado de Servicios</h1>
+            <p class="subtitle">Monitoreo en tiempo real del servidor Ubuntu 22.04 LTS</p>
+        </header>
+
+        <div class="status-banner">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            Todos los sistemas operan con normalidad
+        </div>
+
+        <div class="metrics-grid">
+            <div class="metric-card">
+                <span class="metric-title">Uptime (Últimos 30 días)</span>
+                <span class="metric-value">99.98%</span>
+            </div>
+            <div class="metric-card">
+                <span class="metric-title">Uso de CPU</span>
+                <span class="metric-value">14%</span>
+            </div>
+            <div class="metric-card">
+                <span class="metric-title">Memoria RAM</span>
+                <span class="metric-value">2.1 / 4.0 GB</span>
+            </div>
+        </div>
+
+        <h2 class="section-title">Infraestructura Core</h2>
+        <div class="service-list">
+            <div class="service-item">
+                <div class="service-info">
+                    <span class="service-name">Docker Engine</span>
+                    <span class="service-desc">Motor de contenedores</span>
+                </div>
+                <span class="badge">Operativo</span>
+            </div>
+            <div class="service-item">
+                <div class="service-info">
+                    <span class="service-name">Coolify PaaS</span>
+                    <span class="service-desc">Orquestador Self-hosted</span>
+                </div>
+                <span class="badge">Operativo</span>
+            </div>
+            <div class="service-item">
+                <div class="service-info">
+                    <span class="service-name">Nginx Web Server</span>
+                    <span class="service-desc">Proxy y archivos estáticos</span>
+                </div>
+                <span class="badge">Operativo</span>
+            </div>
+            <div class="service-item">
+                <div class="service-info">
+                    <span class="service-name">Cloudflare Tunnel</span>
+                    <span class="service-desc">Enlace seguro (taller-coolify)</span>
+                </div>
+                <span class="badge">Operativo</span>
+            </div>
+        </div>
+
+        <div class="incidents-section">
+            <h2 class="section-title">Historial de Incidentes</h2>
+            <div class="incident-card">
+                <span class="incident-date">Estado actual</span>
+                <p class="incident-text">Sin incidentes reportados hoy.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        Vicente Díaz, Antonio Tabilo | 2026 | Cloud Computing
+    </footer>
+
+</body>
+</html>
